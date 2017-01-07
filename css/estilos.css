@@ -89,3 +89,24 @@ h1{
 	width: 1000px; /*asigna tamaño del contenedor de la imagen*/ 
 	margin: 0 auto; /*centra elemento*/ 
 }
+
+.blog-items{
+	display: flex; /*pone los elementos uno al costado de otro*/
+	flex-wrap: wrap; /*cuando un elemento ya no tiene espacio dentro del contenedor hace un barrido hacia abajo*/ 
+
+/*forma alineacion horizontal a los elementos
+	space-aroud = mismo margen de izquierda y derecha
+	space-between = agrega el mismo margen pero solo entre elementos*/
+
+	justify-content: space-between;
+}
+
+.blog-items h3{
+	font-weight: 600;
+	margin: /*arriba,abajo*/ 10px /*hacia los costados*/ 0;
+	
+}
+
+.item-blog{
+	width: 300px;
+}
