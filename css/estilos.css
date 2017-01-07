@@ -1,0 +1,64 @@
+body{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif; /*se hereda el tipo de fuente a todo lo que este dentro del body*/
+
+}
+
+header{
+	background: #1C3643;
+/*	height: 52px;*/
+	padding: 0 10px;
+
+/*forma 3 con flex-box  nota flex afecta a los hijos de la etiqueta seleccionada*/
+	display: flex; 
+	justify-content: space-between;
+	align-items: center; /*alinea itemas dentro de header, dif propiedades se asigno centro*/
+/*----------------------------------*/
+
+}
+
+nav{
+/*	mover elemento a lado derecho de diferentes formas 
+*/
+/*forma 1
+	float: right;*/
+
+/*forma 2	
+	position: absolute;
+	right: 0;     
+	top: 0;*/
+
+/*forma 3 en header*/
+
+}
+
+nav ul{
+	display: flex; /*cambia la posicion de los elementos en una linea*/
+
+}
+
+nav li{
+	list-style: none; /*quita los estilos en las listas*/
+	color: white;
+}
+
+nav li:after{ /*pseudoclase*/
+	content: "|";
+
+/*--agrega separacion igual entre elementos de la etiqueta--*/
+	display: inline-block;
+	margin: /*arriba y abajo*/ 0  /*hacia los costados*/ 10px;
+/*----------------------------------------------------------*/
+}
+
+/*quita el ultimo | dentro del menu*/
+nav li:last-child:after{ 
+	display: none;
+}
+
+
+nav a{
+	color: white;
+	text-decoration: none; /*quita subrayado de elementos*/
+
+}
