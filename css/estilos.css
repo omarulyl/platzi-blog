@@ -1,7 +1,11 @@
 body{
 	margin: 0;
 	font-family: 'Open Sans', sans-serif; /*se hereda el tipo de fuente a todo lo que este dentro del body*/
+	color: #515151;
+}
 
+a{
+	color: #515151;
 }
 
 header{
@@ -128,6 +132,7 @@ nav a.is-active{
 h1{
 	margin: 0;
 	font-weight: 600;
+	margin-bottom: 15px;
 }
 
 .portada{
@@ -135,6 +140,7 @@ h1{
 /*	nota: para poder acomodar elementos con posicion absoluta se necesita 
 	asignar una posicion absoluto al padre del objeto a mover*/
 	position: relative;
+	margin-bottom: 20px;
 }
 
 .portada .descripcion{
@@ -165,10 +171,72 @@ h1{
 
 .blog-items h3{
 	font-weight: 600;
-	margin: /*arriba,abajo*/ 10px /*hacia los costados*/ 0;
+	margin: /*arriba,abajo*/ 10px /*hacia los costados*/ 0 15px;
 	
 }
 
 .item-blog{
 	width: 300px;
 }
+
+.item-blog .descripcion{
+	margin-bottom: 15px;
+}
+
+.paginador{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.paginador ul{
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-left: 10px; 
+}
+
+.paginador li{
+	background: #EAEAEA;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	border-color: 1px solid grey;
+	margin: 0 5px;
+}
+
+.paginador li.selected{
+	border-color: transparent;
+	background: white;
+}
+
+.paginador a{
+	margin: 0 10px;
+	text-decoration: none;
+	display: block;
+	background: inherit;
+	
+}
+
+.autor{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 13px;
+	border-top: 2px solid gray;
+	padding-top: 15px;
+
+}
+
+.autor img {
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.autor p {
+	margin: 0;
+}
+
