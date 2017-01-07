@@ -62,3 +62,30 @@ nav a{
 	text-decoration: none; /*quita subrayado de elementos*/
 
 }
+
+h1{
+	margin: 0;
+	font-weight: 600;
+}
+
+.portada{
+	/*border: 10px solid red;*/
+/*	nota: para poder acomodar elementos con posicion absoluta se necesita 
+	asignar una posicion absoluto al padre del objeto a mover*/
+	position: relative;
+}
+
+.portada .descripcion{
+	background: rgba(255, 255, 255, .8); /*agrega opacidad al color blanco*/
+	position: absolute; /*revisar nota de .portada*/
+	bottom: 30px;
+	left: 20px;
+	padding: 20px;
+
+
+}
+
+.blog{
+	width: 1000px; /*asigna tamaño del contenedor de la imagen*/ 
+	margin: 0 auto; /*centra elemento*/ 
+}
